@@ -1,0 +1,31 @@
+GET http://localhost:5078/Games
+
+
+###
+
+GET http://localhost:5078/Games/3
+
+### 
+POST http://localhost:5078/Games
+Content-Type: application/json
+
+{
+    
+    "Genre": "kids",
+    "Price": "20.9",
+    "ReleaseDate": "2011-02-01"
+}
+
+###
+PUT http://localhost:5078/Games/1
+Content-Type: application/json
+
+{
+    "Name": "Mincraft",
+    "Genre": "kidsANDmen",
+    "Price": "10.9",
+    "ReleaseDate": "2011-02-01"
+
+}
+###
+DELETE http://localhost:5078/Games/2
